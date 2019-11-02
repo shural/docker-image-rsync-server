@@ -28,7 +28,7 @@ if [ "$1" = 'rsync_server' ]; then
     [ -f /etc/rsyncd.conf ] || cat <<EOF > /etc/rsyncd.conf
     pid file = /var/run/rsyncd.pid
     log file = /dev/stdout
-    timeout = 300
+    timeout = 3600
     max connections = 10
     port = 873
 
